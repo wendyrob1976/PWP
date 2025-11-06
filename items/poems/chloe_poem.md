@@ -1,11 +1,11 @@
 ---
 layout: poem
-title: 
+title: Chloe Poem
 permalink: 
 
 # Source Metadata
-author: 
-poem_title: 
+author: Chloe
+poem_title: Chloe Poem 
 publication_title: 
 publication_editor: 
 publisher: 
