@@ -1,0 +1,76 @@
+---
+layout: default
+title: List of Pages
+permalink: documentation/page-list
+---
+
+<h1 class="post-title">List of All Pages</h1>
+
+<h2>Pages by Category</h2>
+
+<div class="categories-listing">
+  {% assign page_categories = site.category_list %}
+  {% assign pages = site.pages | where_exp: 'page', 'page.title' %}
+  {% assign texts = site.texts | where_exp: 'text', 'text.title' %}
+  {%- comment -%}
+    "where_exp" filter = if page or text has title
+  {%- endcomment -%}
+  {% for category in site.category_list %}
+    <div class="category-listing">
+      <h3>{{ category | replace: "_", " " | capitalize }}</h3>
+      <ul>
+        {% for page in pages %}
+          {% if page.category == category %}
+            <li>
+              <a class="page-link" href="{{ page.url | relative_url }}">
+                {{ page.title | escape }}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+        {% for text in texts %}
+          {% if text.category == category %}
+            <li>
+              <a class="page-link" href="{{ text.url | relative_url }}">
+                {{ text.title | escape }}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</div>
+
+<h2>All pages</h2>
+<p><em>Category in parenthesis</em></p>
+<ul id="all">
+  {% for page in pages %}
+    <li><a class="page-link" href="{{ page.url | relative_url }}">{{ page.title }}</a> ({{ page.category }})</li>
+  {% endfor %}
+</ul>
+
+{% if site.texts.size > 0 %}
+  <h2>Pages by Encoding</h2>
+  <h3>Markdown</h3>
+  <ul>
+  {% assign pages = site.pages | where_exp: 'page', 'page.title' %}
+  {% for page in pages %}
+    {% if page.category != '' %}
+    <li>
+      <a href="{{ page.url | relative_url }}">{{ page.title }}</a> ({{page.category}})
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+  <h3>TEI</h3>
+  <ul>
+    {% for text in site.texts %}
+    {% if text.layout == "tei" %}
+      <li>
+        <a href="{{ text.url | relative_url }}">{{ text.title }}</a> ({{text.category}})
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endif %}

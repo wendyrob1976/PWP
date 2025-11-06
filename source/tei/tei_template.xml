@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main"></title>
+            <author xml:id=""></author>
+            <editor xml:id=""></editor>
+            <respStmt>
+               <resp>Transcription and encoding</resp>
+               <persName xml:id=""></persName>
+            </respStmt>
+            <sponsor></sponsor>
+            <funder></funder>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <date></date>
+            </edition>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>Recovery Hub for American Women Writers</distributor>
+            <address>
+               <addrLine></addrLine>
+               <addrLine></addrLine>
+               <addrLine></addrLine>
+            </address>
+            <availability>
+               <licence></licence>
+               <p></p>
+            </availability>
+            <idno></idno>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <author sameAs=""/>
+               <date when=""></date>
+               <!-- title levels can be "m" (for main) or "a" and "j" (for a piece that is part of something larger, like an article in a journal) -->
+               <title level=""></title>
+               <!-- optional field to include if the original is based on numbered pages -->
+               <biblScope unit="pages"></biblScope>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy>
+               <!-- any category added here will also need to be added to the config file -->
+               <category><catDesc></catDesc></category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change when="" who=""></change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <pb facs=""/>
+         <p></p>
+      </body>
+   </text>
+</TEI>

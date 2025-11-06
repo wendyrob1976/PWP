@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="example.tei.pm00003">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">There is no Frigate like a Book</title>
+            <author xml:id="ed" ref="https://viaf.org/en/viaf/31995584">Dickinson, Emily (1830&#8211;1886)</author>
+            <editor xml:id="se">Editor, Sample</editor>
+            <respStmt>
+               <resp>Transcription and encoding</resp>
+               <persName xml:id="st">Transcriber, Sample</persName>
+            </respStmt>
+            <sponsor>Sample Institution</sponsor>
+            <funder>Sample Funder</funder>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <date>2025</date>
+            </edition>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>Sample Distributor</distributor>
+            <address>
+               <addrLine>1000 A Street</addrLine>
+               <addrLine>A Town, State</addrLine>
+            </address>
+            <idno>example.tei.pm00003</idno>
+            <availability>
+               <licence>https://creativecommons.org/licenses/by-nc-sa/4.0/</licence>
+               <p>The base text of the original item is in the public domain. The text encoding and editorial notes were prepared 
+                  by the editor and are licensed under a <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons 
+                  Attribution-NonCommercial-ShareAlike 4.0 International License</ref> (CC BY-NC-SA 4.0).</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title level="m">There is no Frigate like a Book</title>
+               <author sameAs="#ed"/>
+               <date when="1873" cert="medium" xml:id="dat1">About 1873</date>
+               <orgName xml:id="acl">Amherst College Archives &amp; Special Collections</orgName>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy>
+               <category><catDesc>poems</catDesc></category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#st" when="2025-01-21">transcribed and encoded</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head type="supplied">[There is no Frigate like a Book]</head>
+         <lg>
+            <l>There is no Frigate<lb/>
+            like a Book</l>
+            <l>To take us<note type="editorial" xml:id="n1" place="end">The word "one" is written below this word on the manuscript.</note> Lands<lb/> 
+            away</l>
+            <l>Nor any Coursers like<lb/> 
+            a Page</l>
+            <l>Of prancing Poetry&#8212;</l>
+            <l>This Travel<note type="editorial" xml:id="n2" place="end">The word "Traverse" is written above this word.</note> may the <lb/>
+            poorest take&#8212;</l>
+            <l>Without offense<note type="editorial" xml:id="n3" place="end">The word "oppress" is written below this word.</note> of Toll&#8212;</l>
+            <l>How frugal is the<lb/>
+               Chariot</l>
+            <l>That bears the Human Soul.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>
