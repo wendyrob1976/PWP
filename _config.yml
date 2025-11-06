@@ -28,7 +28,7 @@
 # shorter version here, and using the long version as the title of your 
 # homepage (the "title:" in the frontmatter/metadata of index.md).
 
-title: Recovery Hub Digital Edition Template
+title: Black Poetic Coteries in Early America
 
 #############
 # Site URL #
@@ -37,8 +37,8 @@ title: Recovery Hub Digital Edition Template
 # url for Recovery Hub projects is "https://recoveryhub.github.io/"
 # for non-Recovery Hub projects, check your GitHub Pages URL
 
-baseurl: "/edition_template"
-url: "https://recoveryhub.github.io/"
+baseurl: "/PWP"
+url: "https://wendyrob1976.github.io/"
 
 
 
@@ -50,10 +50,8 @@ url: "https://recoveryhub.github.io/"
 # you can do so using the Markdown file index.md.
 
 description: >- 
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear on your home page, in your document 
-  head meta for Google search results, and in your RSS feed.xml site description.
-
+  This website makes visible the possible poetic communities in which Phillis Wheatley Peters 
+  produced and circulated her work.
 
 ####################
 # Navigation Links #
