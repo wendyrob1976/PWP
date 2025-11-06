@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="example.tei.cr00001">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Fanny Fern to Mary Abigail Dodge, 26 January 1868</title>
+            <author xml:id="ff" ref="https://viaf.org/en/viaf/54174466">Fern, Fanny (1811&#8211;1872)</author>
+            <editor xml:id="se">Editor, Sample</editor>
+            <respStmt>
+               <resp>Transcription and encoding</resp>
+               <persName xml:id="st">Transcriber, Sample</persName>
+            </respStmt>
+            <sponsor>Sample Institution</sponsor>
+            <funder>Sample Funder</funder>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <date>2025</date>
+            </edition>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>Sample Distributor</distributor>
+            <address>
+               <addrLine>1000 A Street</addrLine>
+               <addrLine>A Town, State</addrLine>
+            </address>
+            <idno>example.tei.cr00001</idno>
+            <availability>
+               <licence>https://creativecommons.org/licenses/by-nc-sa/4.0/</licence>
+               <p>The base text of the original item is in the public domain. The text encoding and editorial notes were prepared 
+                  by the editor and are licensed under a <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons 
+                     Attribution-NonCommercial-ShareAlike 4.0 International License</ref> (CC BY-NC-SA 4.0).</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+             <bibl>
+                <title level="m">Fanny Fern to Mary Abigail Dodge, 26 January 1868</title>
+                <author sameAs="#ff"/>
+                <date cert="high" when="1868-01-26" xml:id="dat1">January 26, 1868</date>
+                <idno type="callno">MSS 12, Box 1, Folder 6</idno>
+                <orgName xml:id="pem">Mary Abigail Dodge Papers, Phillips Library, Peabody Essex Museum</orgName>
+             </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy>
+               <category><catDesc>correspondence</catDesc></category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName sameAs="#ff"/>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="https://viaf.org/en/viaf/68113187">Dodge, Mary Abigail (1833&#8211;1896)</persName>
+            </correspAction>
+         </correspDesc>
+      </profileDesc>
+      <revisionDesc>
+         <change who="#st" when="2025-01-21">Transcribed and encoded</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <opener>
+            <dateline><date when="1868-01-26">January 26, 1868.</date></dateline>
+            <salute>Miss Dodge.</salute>
+            <salute>otherwise,<lb/>
+            My dear Gail Hamilton</salute>
+         </opener>
+         
+         <p>A book is in prospect. The title is to be, Eminent Women of our time. You and I, are to figure in it. <hi rend="underline">I</hi> am to do <hi rend="underline">you</hi>! 
+            Who is to take me the gods know. Meantime I desire to know at what age you cut your first tooth, and where. Also whether you had the measles before the mumps, 
+            or the mumps before the measles. Also, any other interesting items about yourself, which you can furnish me at your earliest convenience. It will be a labor 
+            of love with me, because I rejoice every day in your existence. In short you are one of the women I believe in. So dont be stingy of facts. Horace Greeley, 
+         Theodore Tilton, my husband, &amp; others are all to "do" somebody. It is intended, that the book shall be handsomely got up, in every respect. There you 
+         are&#8212;please send me an early response.</p>
+         
+         <closer>
+            <salute>Yours very truly</salute>
+            <signed>Fanny Fern Parton</signed>
+            <address>
+               <addrLine>303. East Eighteenth St. New York</addrLine>
+            </address>
+         </closer>
+      </body>
+   </text>
+</TEI>

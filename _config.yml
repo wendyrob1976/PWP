@@ -1,0 +1,312 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+
+
+##############
+# Site Title #
+##############
+# This title appears in the site header at the top of every page. If the 
+# full title of your digital edition is very long, we recommend using a 
+# shorter version here, and using the long version as the title of your 
+# homepage (the "title:" in the frontmatter/metadata of index.md).
+
+title: Recovery Hub Digital Edition Template
+
+#############
+# Site URL #
+#############
+# baseurl matches your repository name
+# url for Recovery Hub projects is "https://recoveryhub.github.io/"
+# for non-Recovery Hub projects, check your GitHub Pages URL
+
+baseurl: "/edition_template"
+url: "https://recoveryhub.github.io/"
+
+
+
+####################
+# Site Description #
+####################
+# This description will appear on your home page. 
+# If you need to add more content to your home page (text, images, etc.), 
+# you can do so using the Markdown file index.md.
+
+description: >- 
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear on your home page, in your document 
+  head meta for Google search results, and in your RSS feed.xml site description.
+
+
+####################
+# Navigation Links #
+####################
+# This is where you can change the links that appear in the navigation menu.
+# List them here with the full path to the file (including folder names),
+# wrapped in quotation marks,in the order you wish them to appear in the menu. 
+# The title of each page, which is the "title:" you have in the 
+# frontmatter/metadata/teiHeader of the corresponding file, is what will appear 
+# in the navigation menu.
+#
+# Note that for TEI files, you will link to the file located in the _texts 
+# folder. However, DO NOT include the underscore at the beginning of the 
+# folder name. In other words, you would use texts/filename.md, 
+# NOT _texts/filename.md or source/tei/filename.xml).
+#
+# Here's what a typical digital edition might have in the navigation menu:
+#
+# header_pages:
+#  - "items/books/filenameofbook.md"
+#  - "texts/filenameoftei.md
+#  - "paratext/essays/filenameofessay.md"
+#  - "about.md"
+#
+# Configure your links here:
+
+header_pages:  
+  - "paratext/docs/1-documentation.md"
+  - "paratext/docs/all-pages.html"
+
+
+################
+# Banner Image #
+################
+# To use a custom banner image, name your image "banner.jpg" and replace
+# the existing file in the /assets/images folder.
+# banner_size sets the width of the image. "half" is the default. 
+# For a full-width image, use banner_size: "full" instead.
+
+banner_image: assets/images/banner.jpg
+banner_alt_text: Recovery Hub of American Women Writers with quill icon and pages of a book in the background
+banner_size: "half" # change to "full" if you want a full-width image
+
+
+
+#####################################
+# Editor(s) of this Digital Edition #
+#####################################
+# If most (or all) pages in this edition have the same editor(s), it's easier
+# to set a default here than to include it in the metadata for every item. 
+# If you decide to set a default here, you can still override it on individual 
+# items by filling in "file_edited_by:" in the item's frontmatter/metadata.
+
+editor: Editor(s) names here
+
+
+
+#########################
+# Contact Info #
+#########################
+# These variables control the information that appears in the footer. 
+# Variables with '#' at the beginning of the line are "commented out" 
+# and won't be included in the site. To "uncomment" them and have them
+# appear on the site, remove the '#" from the beginning of the line.
+
+author:
+  name: Your name(s)
+  email: contact-email@example.com
+  institution: Your institution(s) or organization(s)
+
+#privacy_notice: https://www.example.com/your-privacy-notice-url
+
+#twitter_username: YourUsername
+github_username:  YourUsername
+#dribbble_username: YourUsername
+facebook_username: YourUsername
+#flickr_username: YourUsername
+#instagram_username: YourUsername
+#linkedin_username: YourUsername
+#pinterest_username: YourUsername
+#youtube_username: YourUsername
+#googleplus_username: +YourUsername
+#rss: rss
+
+#mastodon:
+# - username: jekyll
+#   instance: example.com
+# - username: jekyll2
+#   instance: example.com
+
+
+##################################
+# Sponsors / Institutional Logos #
+##################################
+# To credit project partners using linked logos in the footer, uncomment 
+# the first line (remove the '#' symbol at the beginning of "#sponsors:")
+# and then repeat the following for each logo:
+#
+# 1. place your logo in the images folder, /assets/images/
+# 2. uncomment the 4-line set of variables for that sponsor (remove the '#' symbol 
+#    at the beginning of each line, starting with "- sponsor:", then "name:",
+#    "link:", and "logo_path:").
+# 3. fill in "name:" with their name, as it should be displayed
+# 4. fill in "link" with a link to their website
+# 5. fill in the path to the logo image you added, including the folder path
+#     (e.g. assets/images/your-logo.jpg)
+# 6. To add additional sponsors, copy and paste the 4 lines 
+#    starting with "- sponsor:" and ending with "logo_path:"
+
+#sponsors:
+#  - sponsor:
+#    name: Southern Illinois University Edwardsville
+#    link: https://www.siue.edu/
+#    logo_path: assets/images/siue.png
+    
+#  - sponsor: 
+#    name: University of Nebraska–Lincoln
+#    link: https://www.unl.edu/
+#    logo_path: assets/images/unl.png
+
+
+
+##############
+# Categories #
+##############
+# This sets default categories for your Markdown or TEI files based on
+# the folder in which they are located. We use this custom method of setting up 
+# categories, rather than relying on Jekyll's built-in collections 
+# functionality, because the latter does not account for files that have no 
+# frontmatter/metadata.
+# 
+# To add a new category, you must add it to both "category_list" and "defaults":
+#    1. Under "category_list:", copy and paste one of the lines, including the 
+#       2 spaces at the beginning of the line. (They will break if they are not 
+#       indented correctly.)
+#    2. Change new line you copy-and-pasted to the name of your new category. 
+#       Categories should be all lowercase letters and cannot contain spaces, 
+#       and must be inside quotation marks. All but the last category in the 
+#       list must have a comma after the closing quotation mark.
+#    3. Under "defaults:", copy and paste the 6-line set of variables, 
+#       starting with "scope:" and ending with "category:". Include all spaces
+#       that indent each line.
+#    4. Set up your new category defaults as follows:
+#        a. "path:" is the path to the folder in which you will store this 
+#           category's files/texts, wrapped in quotation marks.
+#        b. "type:" is always pages.
+#        c. "layout:" is the default page layout this category will use. You can 
+#           override this default in individual files with the `layout:` field
+#           in the file's frontmatter/metadata. For a list of layout options 
+#           included in this edition template, see the Metadata documentation page:
+#           https://recoveryhub.github.io/edition_template/documentation/metadata
+#        d. "category:" MUST match the category name you added under "category_lists" 
+#           (See Step 2), but with no quotation marks.
+    
+category_list: [
+  "none", 
+  "drafts", 
+  "books", 
+  "periodicals", 
+  "essays", 
+  "poems", 
+  "documentation",
+  "correspondence"
+]
+
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: pages
+    values:
+      layout: default
+      category: none
+  - scope:
+      path: "source/drafts"
+      type: pages
+    values:
+      layout: default
+      category: drafts
+# Item Types
+  - scope:
+      path: "items/books"
+      type: pages
+    values:
+      layout: paginate
+      category: books
+  - scope:
+      path: "items/periodicals"
+      type: pages
+    values:
+      layout: paginate
+      category: periodicals
+  - scope:
+      path: "items/poems"
+      type: pages
+    values:
+      layout: default
+      category: poems
+# Text (TEI)
+  - scope:
+      path: "_texts"
+      type: texts
+    values:
+      layout: tei
+# Paratext (Introduction, Essays, Documentation)
+  - scope:
+      path: "paratext/essays"
+      type: pages
+    values:
+      layout: default
+      category: essays
+  - scope:
+      path: "paratext/docs"
+      type: pages
+    values:
+      layout: default
+      category: documentation
+
+# To use Jekyll collections, set them up here.
+# If you are using TEI in your edition, "output:"
+# must be set to true.
+collections: 
+  texts:
+    output: true
+
+
+
+##################
+# Other Settings #
+##################
+# Settings that typically won't need to be altered for this template.
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - source/drafts
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
